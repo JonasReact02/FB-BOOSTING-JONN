@@ -273,29 +273,42 @@ class MessBot(Client):
             	reply = f"𝙲𝙰𝚃𝙵𝙰𝙲𝚃 𝚁𝙴𝚂𝙿𝙾𝙽𝙳: \n{facts}"
             	self.sendmessage(author_id, thread_id, thread_type, reply)
             if msg.startswith(f"{prefix}list"):
-                reply = f"""[ 𝙁𝘽 𝘽𝙊𝙊𝙎𝙏𝙄𝙉𝙂 𝘽𝙊𝙏 ]
-𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁: 𝙼𝙰𝙷𝙸𝚁𝙾 𝙲𝙷𝙰𝙽
-╭─❍
-➠ {prefix}fbfollow: Send follow to id.
-╰───────────⟡
-╭─❍
-➠ {prefix}fbreact: Send reaction to post.
-╰───────────⟡
-╭─❍
-➠ {prefix}echo: say something.
-╰───────────⟡
-╭─❍
-➠ {prefix}catfact: Get random catfacts everday.
-╰───────────⟡
-╭─❍
-➠ {prefix}note: message from developer.
-╰───────────⟡
-╭─❍
-➠ {prefix}uid: get your id.
-╰───────────⟡
-╭─❍
-➠ {prefix}setprefix: change the prefix of bot [ADMIN ONLY].
-╰───────────⟡"""
+                reply = f"""[ 𝘽𝙊𝙊𝙎𝙏𝙄𝙉𝙂 𝘽𝙊𝙏 ]
+𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁: zach
+━━━━━━━━━━━━
+╭┈ ❒ CMD
+╰┈➤ {prefix}fbfollow: Send follow to id.
+━━━━━━━━━━━━
+
+━━━━━━━━━━━━
+╭┈ ❒ CMD
+╰┈➤ {prefix}fbreact: Send reaction to post.
+━━━━━━━━━━━━
+
+━━━━━━━━━━━━
+╭┈ ❒ CMD
+╰┈➤ {prefix}echo: say something.
+━━━━━━━━━━━━
+
+━━━━━━━━━━━━
+╭┈ ❒ CMD
+╰┈➤ {prefix}catfact: Get random catfacts everday.
+━━━━━━━━━━━━
+
+━━━━━━━━━━━━
+╭┈ ❒ CMD
+╰┈➤ {prefix}note: message from developer.
+━━━━━━━━━━━━
+
+━━━━━━━━━━━━
+╭┈ ❒ CMD
+╰┈➤ {prefix}uid: get your id.
+━━━━━━━━━━━━
+
+━━━━━━━━━━━━
+╭┈ ❒ CMD
+╰┈➤ {prefix}setprefix: change the prefix of bot [ADMIN ONLY].
+━━━━━━━━━━━━"""
                 self.sendmessage(author_id, thread_id, thread_type, reply)
             if msg.startswith(f"{prefix}uid"):
             	sender_name = self.fetchUserInfo(author_id)[author_id].name
@@ -316,7 +329,7 @@ class MessBot(Client):
             	reply = "𝚃𝚑𝚒𝚜 𝚋𝚘𝚝 𝚒𝚜 𝚌𝚞𝚛𝚛𝚎𝚗𝚝𝚕𝚢 𝚒𝚗 𝚊 𝚝𝚎𝚜𝚝 𝚙𝚑𝚊𝚜𝚎 𝚠𝚒𝚝𝚑 𝚏𝚛𝚎𝚎𝚖𝚘𝚍𝚎 𝚊𝚌𝚝𝚒𝚟𝚊𝚝𝚎𝚍. 𝙸𝚏 𝚢𝚘𝚞 𝚝𝚛𝚢 𝚛𝚎𝚊𝚌𝚝𝚒𝚗𝚐 𝚝𝚘 𝚝𝚑𝚎 𝚜𝚊𝚖𝚎 𝚙𝚘𝚜𝚝 𝚊 𝚜𝚎𝚌𝚘𝚗𝚍 𝚝𝚒𝚖𝚎, 𝚒𝚝 𝚖𝚒𝚐𝚑𝚝 𝚗𝚘𝚝 𝚠𝚘𝚛𝚔 𝚋𝚎𝚌𝚊𝚞𝚜𝚎 𝚝𝚑𝚎 𝚍𝚊𝚝𝚊𝚋𝚊𝚜𝚎 𝚑𝚊𝚜 𝚊𝚕𝚛𝚎𝚊𝚍𝚢 𝚛𝚎𝚌𝚘𝚛𝚍𝚎𝚍 𝚢𝚘𝚞𝚛 𝚒𝚗𝚒𝚝𝚒𝚊𝚕 𝚛𝚎𝚊𝚌𝚝𝚒𝚘𝚗. 𝙷𝚘𝚠𝚎𝚟𝚎𝚛, 𝚢𝚘𝚞 𝚌𝚊𝚗 𝚜𝚝𝚒𝚕𝚕 𝚛𝚎𝚊𝚌𝚝 𝚝𝚘 𝚊 𝚍𝚒𝚏𝚏𝚎𝚛𝚎𝚗𝚝 𝚙𝚘𝚜𝚝, 𝚜𝚊𝚖𝚎 𝚙𝚛𝚘𝚝𝚘𝚌𝚘𝚕 𝚠𝚎'𝚛𝚎 𝚞𝚜𝚒𝚗𝚐 𝚝𝚘 𝚏𝚘𝚕𝚕𝚘𝚠."
             	self.sendmessage(author_id, thread_id, thread_type, reply)
             if ("you from" in msg):
-                reply = "I am from Philippines, currently living in cagayan de oro."
+                reply = "I am from Philippines, currently living in calamba city laguna"
                 self.sendmessage(author_id, thread_id, thread_type, reply)
             if msg.startswith(f"{prefix}echo"):
                 echo_text = msg[len(prefix)+5:]
